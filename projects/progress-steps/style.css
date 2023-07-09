@@ -37,3 +37,17 @@
 .head span {
     color: var(--red);
 }
+
+ul {
+    display: flex;
+    margin-top: 180px;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 30px;
+}
