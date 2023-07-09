@@ -33,7 +33,6 @@
 
 .head {
     text-align: center;
-    margin-top: 200px;
     font-size: 30px;
     font-weight: bold;
     color: var(--cblack);
@@ -64,17 +63,21 @@ ul li {
 
 /* Icons, text & steps */
 
-ul li .progress .uil {
-    display: none;
-}
-
 ul li .icon {
     font-size: 25px;
     margin: 0 60px;
 }
 
+ul li .text {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* Progress-after */
+
 ul li .progress {
-    margin: 12px 0;
+    margin: 14px 0;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -85,23 +88,25 @@ ul li .progress {
     cursor: pointer;
 }
 
-ul li .text {
-    font-size: 14px;
-    text-align: center;
-}
-
-ul li .progress .p {
-    font-size: 15px;
-}
-
-
-/* Progress-after */
-
-progress::after {
-    content: "";
+.progress::after {
+    content: " ";
     position: absolute;
     width: 125px;
     height: 5px;
     background-color: var(--cblack);
     right: 30px;
+}
+
+.one::after {
+    width: 0;
+    height: 0;
+}
+
+ul li .progress .uil {
+    display: none;
+}
+
+ul li .progress p {
+    font-size: 20px;
+    padding: 0 0 5px 10px;
 }
