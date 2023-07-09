@@ -110,3 +110,22 @@ ul li .progress p {
     font-size: 20px;
     padding: 0 0 5px 10px;
 }
+
+ul li .active {
+    background-color: var(--red);
+}
+
+li .active::after {
+    background-color: var(--red);
+}
+
+ul li .active p {
+    display: none;
+}
+
+ul li .active .uil {
+    display: flex;
+    color: var(--white);
+    font-size: 20px;
+    padding-left: 4px;
+}
