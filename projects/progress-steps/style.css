@@ -23,6 +23,8 @@
     display: flex;
     font-family: 'Ysabeau SC';
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--cblue);
 }
 
@@ -46,8 +48,6 @@
 
 ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 180px;
 }
 
@@ -55,7 +55,8 @@ ul li {
     list-style: none;
     display: flex;
     flex-direction: column;
-    margin: 0 30px;
+    align-items: center;
+    /* margin: 0 30px; */
     color: var(--red);
     font-weight: 800;
 }
@@ -69,6 +70,7 @@ ul li .progress .uil {
 
 ul li .icon {
     font-size: 25px;
+    margin: 0 60px;
 }
 
 ul li .progress {
@@ -78,13 +80,28 @@ ul li .progress {
     border-radius: 50%;
     background-color: var(--cblack);
     display: grid;
-    place-items: initial;
+    place-items: inherit;
     position: relative;
     cursor: pointer;
 }
 
 ul li .text {
-    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
 }
 
-ul li .progress .p {}
+ul li .progress .p {
+    font-size: 15px;
+}
+
+
+/* Progress-after */
+
+progress::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    background-color: var(--cblack);
+    right: 30px;
+}
