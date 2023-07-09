@@ -22,7 +22,7 @@ two.onclick = function() {
 
 three.onclick = function() {
     one.classList.add("active");
-    two.classList.add("remove");
+    two.classList.add("active");
     three.classList.add("active");
     four.classList.remove("active");
     five.classList.remove("active");
@@ -37,9 +37,9 @@ four.onclick = function() {
 }
 
 five.onclick = function() {
-    one.classList.add("remove");
-    two.classList.add("remove");
-    three.classList.add("remove");
-    four.classList.add("remove");
+    one.classList.add("active");
+    two.classList.add("active");
+    three.classList.add("active");
+    four.classList.add("active");
     five.classList.add("active");
 }

@@ -149,10 +149,13 @@ ul li .active .uil {
     }
     .progress::after {
         width: 5px;
-        height: 55px;
+        height: 35px;
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
+    }
+    ul li .text {
+        font-size: 20px;
     }
     .one::after {
         height: 0;
