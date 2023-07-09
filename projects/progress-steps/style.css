@@ -33,13 +33,16 @@
 
 .head {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: var(--cblack);
 }
 
 .head span {
     color: var(--red);
+    background: linear-gradient( to right, #FC5C7D, #6A82FB, #59C173, #dd3e54);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
@@ -109,6 +112,7 @@ ul li .progress .uil {
 ul li .progress p {
     font-size: 20px;
     padding: 0 0 5px 10px;
+    color: var(--white);
 }
 
 ul li .active {
@@ -128,4 +132,38 @@ ul li .active .uil {
     color: var(--white);
     font-size: 20px;
     padding-left: 4px;
+}
+
+
+/* Responsive Css */
+
+@media (max-width:980px) {
+    ul {
+        flex-direction: column;
+    }
+    ul li {
+        flex-direction: row;
+    }
+    ul li .progress {
+        margin: 0 30px;
+    }
+    .progress::after {
+        width: 5px;
+        height: 55px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .one::after {
+        height: 0;
+    }
+    ul li .icon {
+        margin: 15px 0
+    }
+}
+
+@media (max-width:600px) {
+    .head {
+        font-size: 35px;
+    }
 }
