@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap');
+:root {
+    --white: white;
+    --red: #c94b4b;
+    --cblack: rgb(37, 37, 37);
+    --cblue: #dbd6e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Ysabeau SC', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet');
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Ysabeau SC';
+    flex-direction: column;
+    background-color: var(--cblue);
+}
+
+.head {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--cblack);
+}
+
+.head span {
+    color: var(--red);
+}
