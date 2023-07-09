@@ -26,6 +26,9 @@
     background-color: var(--cblue);
 }
 
+
+/* Heading */
+
 .head {
     text-align: center;
     margin-top: 200px;
@@ -37,6 +40,9 @@
 .head span {
     color: var(--red);
 }
+
+
+/* List points */
 
 ul {
     display: flex;
@@ -54,4 +60,31 @@ ul li {
     font-weight: 800;
 }
 
-ul li .progress {}
+
+/* Icons, text & steps */
+
+ul li .progress .uil {
+    display: none;
+}
+
+ul li .icon {
+    font-size: 25px;
+}
+
+ul li .progress {
+    margin: 12px 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--cblack);
+    display: grid;
+    place-items: initial;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li .text {
+    font-size: 18px;
+}
+
+ul li .progress .p {}
