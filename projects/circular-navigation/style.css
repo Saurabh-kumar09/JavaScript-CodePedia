@@ -42,6 +42,10 @@ body {
     color: #fff;
 }
 
+li a i {
+    font-size: 25px;
+}
+
 .menu li {
     position: absolute;
     list-style: none;
@@ -54,7 +58,20 @@ body {
     z-index: 10;
 }
 
-.menu .active li {
+.menu.active li {
     visibility: visible;
     opacity: 1;
 }
+
+.menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    font-size: 1.75em;
+    color: #222327;
+    transform: rotate(calc(360deg/-6 * var(--i)))
+}
+
+.menu .active li.active {}
