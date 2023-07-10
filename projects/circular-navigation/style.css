@@ -21,4 +21,16 @@ body {
     align-items: center;
 }
 
-.menu .toggle {}
+.menu .toggle {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: 0.5s;
+}
