@@ -1,3 +1,5 @@
+//onclick circular naviagtion
+
 let menu = document.querySelector('.menu');
 let menuToggle = document.querySelector('.toggle');
 
@@ -6,6 +8,7 @@ menuToggle.onclick = function() {
     menuToggle.classList.toggle('active')
 }
 
+//Icons movement
 const list = document.querySelectorAll("li");
 
 function activeLink() {
