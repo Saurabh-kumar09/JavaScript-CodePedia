@@ -34,3 +34,12 @@ body {
     cursor: pointer;
     transition: 0.5s;
 }
+
+.menu .toggle.active {
+    transform: rotate(315deg);
+    box-shadow: 0 0 0 68px;
+    background: skyblue;
+    color: #fff;
+}
+
+.menu li {}
