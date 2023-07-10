@@ -6,7 +6,7 @@ menuToggle.onclick = function() {
     menuToggle.classList.toggle('active')
 }
 
-const list = document.querySelector("li");
+const list = document.querySelectorAll("li");
 
 function activeLink() {
     list.forEach((item) =>
@@ -15,4 +15,4 @@ function activeLink() {
 }
 
 list.forEach((item) =>
-    item.addeventListener('click', activeLink))
+    item.addEventListener('click', activeLink))
