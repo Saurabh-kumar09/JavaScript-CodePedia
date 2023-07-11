@@ -17,6 +17,30 @@ body {
 }
 
 
+/* heading */
+
+.head {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head span {
+    border-color: rgb(243, 214, 24);
+    border-bottom-style: dashed;
+    font-size: 30px;
+}
+
+.head p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+
 /* Toggle */
 
 .menu {
