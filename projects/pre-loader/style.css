@@ -7,11 +7,17 @@ body {
     background-color: aliceblue;
 }
 
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .loader {
     position: fixed;
     top: 0;
     left: 0;
-    background: #16292f;
+    background: #9eff62;
     height: 100%;
     width: 100%;
     display: flex;
