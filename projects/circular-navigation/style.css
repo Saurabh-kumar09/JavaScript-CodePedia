@@ -12,6 +12,9 @@ body {
     background: orangered;
 }
 
+
+/* Toggle */
+
 .menu {
     position: relative;
     width: 300px;
@@ -41,6 +44,9 @@ body {
     background: orangered;
     color: #fff;
 }
+
+
+/* Icons  */
 
 li a i {
     font-size: 25px;
@@ -77,6 +83,9 @@ li a i {
 .menu.active li.active {
     transform: rotate(calc(360deg/6 * var(--i))) translateX(12px);
 }
+
+
+/* Indicator */
 
 .indicator {
     position: absolute;
