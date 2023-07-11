@@ -12,10 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.text p {
-    color: black;
+    min-height: 100vh;
+    color: #266201;
+    font-size: 30px;
 }
 
 .loader {
