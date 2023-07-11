@@ -3,14 +3,19 @@
     padding: 0;
 }
 
-body {
+
+/* body {
     background-color: aliceblue;
-}
+} */
 
 .text {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.text p {
+    color: black;
 }
 
 .loader {
@@ -26,7 +31,7 @@ body {
 }
 
 .disappear {
-    animation: vanish 1s forward;
+    animation: vanish 10s forwards;
 }
 
 @keyframes vanish {
