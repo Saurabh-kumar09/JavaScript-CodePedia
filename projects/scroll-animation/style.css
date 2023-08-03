@@ -50,3 +50,10 @@ h1 {
     font-weight: 300;
     font-style: italic;
 }
+
+h6 {
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(47, 46, 46);
+}
