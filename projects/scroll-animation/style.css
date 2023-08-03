@@ -20,7 +20,7 @@ h1 {
     text-shadow: 2px 2px 3px black;
 }
 
-.class {
+.box {
     color: white;
     display: flex;
     flex-direction: column;
@@ -33,14 +33,20 @@ h1 {
     margin: 20px;
     box-shadow: 2px 3px 3px 2px #4f83e3;
     /* Transfrom is used to move all the boxes 250% away on the right hand side */
-    transform: translateX(250%);
+    transform: translateX(500%);
     transition: transform 0.4s ease;
 }
 
-.class:nth-of-type(even) {
-    transform: translateX(-250%);
+.box:nth-of-type(even) {
+    transform: translateX(-500%);
 }
 
-.class.show {
+.box.show {
     transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
 }

@@ -1,4 +1,4 @@
-const boxes = document.querySelectorAll('.class')
+const boxes = document.querySelectorAll('.box')
 
 // on scroll event checkBoxes will be called
 window.addEventListener('scroll', checkBoxes)
@@ -22,3 +22,21 @@ function checkBoxes() {
         }
     })
 }
+
+function randomColor() {
+    var cArr = '1234567890ABCDEF'.split('');
+    var c = "#";
+
+    for (var i = 0; i < 6; i++) {
+        c += cArr[Math.floor(Math.random() * 16)]
+    }
+
+    return c;
+}
+
+// storing all the h2's present in HTML
+const headingText = document.querySelectorAll('h2');
+// looping through all the h2's and adding a random color to each heading
+headingText.forEach(heading => {
+    heading.style.color = randomColor();
+});
