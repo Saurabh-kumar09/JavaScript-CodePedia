@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: url('./img_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.class {
+    margin: 90px;
+    font-size: 40px;
+    border: 2px solid rgb(112, 21, 118);
+}
+
+.green {
+    background-color: green;
+}
